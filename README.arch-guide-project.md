@@ -6,6 +6,33 @@
 
 ## Design Responsivo
 
+### Princípios básicos da responsividade
+#### Fluid Layouts
+- Habilita a webpage a se adaptar a largura ou também altura da janela de exibição
+- Usa as unidades vh vw ao invés de px para elementos que devem dse adaptar a viewport (usualmento layouts)
+- Usa max-width no lugar de width
+
+#### Responsive Units
+- Usa unidade rem ao invés de px para a maior parte das larguras dos elementos para facilitar o escalonamento de um layout completo
+
+#### flexible images
+- por padrão imagens não escalam automatimente quando mudamos a janela de exibição então deve-se ajustar isso.
+- sempre usar % para dimencionar imagens junto com a propriedade max-width
+
+#### Media Queries
+- Usar midia queries para mudar os estilos css em certas larguras da janela de exibição (chamado de breackpoints)
+
+### Layouts Types
+
+![Tipos de Layout](img/layout_types.jpg)
+
+
+#### Float Layouts
+
+#### Flexbox
+
+#### CSS GRID
+
 ## Código escalável e com alta manuteinibilidade
 
 - Limpo
