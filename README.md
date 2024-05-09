@@ -9,6 +9,6 @@
 
 Este projeto é uma exploração cuidadosa e detalhada do design utilizando CSS. Centralizado na criação de uma página exemplar, ele se concentra em um design system meticulosamente elaborado, sem depender de bibliotecas como Bootstrap ou MUI. Além disso, oferece dois guias informativos que destacam as decisões estratégicas por trás do design e da arquitetura CSS, apresentando insights valiosos de maneira clara e objetiva.
 
-[GUIA DE REGRAS CSS DO PROJETO](https://github.com/EddieUFSM/landi/READEME.css-guide-project.md)
+[GUIA DE REGRAS CSS DO PROJETO](https://github.com/EddieUFSM/landi/blob/main/README.css-guide-project.md)
 
-[GUIA DE PADRÃO ARQUITETÔNICO DO PROJETO](https://github.com/EddieUFSM/landi/READEME.arch-guide-project.md)
+[GUIA DE PADRÃO ARQUITETÔNICO DO PROJETO](https://github.com/EddieUFSM/landi/blob/main/README.arch-guide-project.md)
