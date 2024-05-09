@@ -25,8 +25,7 @@
 ### Layouts Types
 
 ![Tipos de Layout](img/layout_types.jpg)
-
-
+**Float Layouts___________________ | Flexbox_____________________ | CSS GRID_____________**
 #### Float Layouts
 
 #### Flexbox
