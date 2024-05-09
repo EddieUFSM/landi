@@ -1,0 +1,18 @@
+{
+  "name": "landi",
+  "version": "1.0.0",
+  "description": "Este projeto é uma exploração cuidadosa e detalhada do design utilizando CSS. Centralizado na criação de uma página exemplar, ele se concentra em um design system meticulosamente elaborado, sem depender de bibliotecas como Bootstrap ou MUI. Além disso, oferece dois guias informativos que destacam as decisões estratégicas por trás do design e da arquitetura CSS, apresentando insights valiosos de maneira clara e objetiva.",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "npm-run-all --parallel start:server compile:sass:watch",
+    "start:server": "live-server",
+    "compile:sass": "node-sass sass/main.scss css/style.css",
+    "compile:sass:watch": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Eduardo",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "node-sass": "^9.0.0"
+  }
+}
