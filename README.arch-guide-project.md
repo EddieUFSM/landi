@@ -1,6 +1,9 @@
 
 # Archtect Mindset
 
+[![BEM](https://img.shields.io/badge/-BEM-9575CD?style=flat-square)](http://getbem.com/)
+[![7-1 Pattern](https://img.shields.io/badge/-7--1%20Pattern-008080?style=flat-square)](https://sass-guidelin.es/#the-7-1-pattern) [![Responsive Design](https://img.shields.io/badge/-Responsive%20Design-4DB6AC?style=flat-square)](https://www.w3schools.com/html/html_responsive.asp) [![Component-driven Design](https://img.shields.io/badge/-Component--driven%20Design-FFB74D?style=flat-square)](https://www.invisionapp.com/inside-design/what-is-component-driven-design/)
+
 ## Design Responsivo
 
 ## Código escalável e com alta manuteinibilidade
