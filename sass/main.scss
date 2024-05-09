@@ -23,7 +23,7 @@ $color-secondary-light: #4a99d6;
 $color-secondary: #2980b9;
 $color-secondary-dark: #1e6b9b;
 
-
+$color-black-blue: #05070d;
 $color-gray-dark: #323c46;
 
 *,
@@ -57,129 +57,208 @@ body {
     background-size: cover;
     background-position: center;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-}
 
-.header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-}
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
 
-.header__logo {
-    font-size: 2.5rem;
-    color: $color-white;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: 600;
-}
+    &__logo {
+        font-size: 2.5rem;
+        color: $color-white;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 600;
+    }
 
-.header__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
 }
 
 .heading-primary {
     color: $color-white;
     text-transform: uppercase;
     margin-bottom: 4rem;
+
+    &--main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        animation-name: movebuttonToTop;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+    }
+
+    &--sub {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 1.6rem;
+        animation-name: movebuttonToTop;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+    }
 }
 
-.heading-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation-name: movebuttonToTop;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
+.button-section {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    &__btn-wrapper{
+        padding: 1rem;
+    }
+
+    &__btn-wrapper > * {
+        margin-right: 1.5rem;
+    }
+
+    &__text {
+        padding: 1rem;
+        display: flex;
+        text-transform: uppercase;
+        align-items: flex-start; /* Ou flex-end ou center, conforme necessário */
+    }
+
 }
 
-.heading-primary--sub {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: 500;
-    letter-spacing: 1.6rem;
-    animation-name: movebuttonToTop;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
+.btn {
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 0.4rem;
+        box-shadow: 0 1rem 2rem rgba($color-black-blue, .2);
+    }
+    &--rounded:link,
+    &--rounded:visited {
+        border-radius: 10rem;
+    }
+    &--semi-rounded:link,
+    &--semi-rounded:visited {
+        border-radius: 1rem;
+    }
+
+    &:hover {
+        transform: translateY(-0.2rem);
+        box-shadow: 0 1rem 2rem rgba($color-black-blue, .2);
+    }
+
+    &:active {
+        transform: translateY(-0.1rem);
+        box-shadow: 0 0.5rem 1rem rgba($color-black-blue, .2);
+    }
+
+
+
+    &--small {
+        font-weight: 400;
+        padding: 0.4rem 2.5rem;
+        font-size: 1.4rem;
+    }
+
+    &--medium {
+        font-weight: 400;
+        padding: 1rem 3.5rem;
+        font-size: 1.5rem;
+    }
+
+    &--large {
+        font-weight: 400;
+        padding: 1.2rem 4rem;
+        font-size: 1.6rem;
+    }
+
+
+    &--white {
+        background-color: $color-white;
+        color: $color-gray-dark;
+    }
+
+    &--primary {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+
+    &--secondary {
+        background-color: $color-secondary;
+        color: $color-white;
+    }
+
+    &--danger {
+        background-color: $color-danger; 
+        color: $color-white;
+    }
+
+    &--warning {
+        background-color:  $color-warning; 
+        color: $color-white;
+    }
+
+    &--success {
+        background-color: $color-success; 
+        color: $color-white;
+    }
 }
 
-.btn--default:link,
-.btn--default:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 0.4rem;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
-}
+.link {
+    &--white {
+        color:  $color-white;
+    }
+    
+    &--primary {
+        color:  $color-primary;
+    }
+    
+    &--secondary {
+        color:  $color-secondary;
+    }
+    
+    &--danger {
+        color:  $color-danger;
+    }
+    
+    &--warning {
+        color:   $color-warning;
+    }
+    
+    &--success {
+        color:  $color-success;
+    }
+    
+    &--medium {
+        font-size: 1.5rem;
+    }
+    
+    &--large {
+        font-size: 1.5rem;
+    }
 
-.btn--default:hover {
-    transform: translateY(-0.2rem);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
-}
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+    }
 
-.btn--default:active {
-    transform: translateY(-0.1rem);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2);
-}
+    &:hover {
+        transform: translateY(-0.2rem);
+        font-size: 1.01rem;
+    }
 
-.btn-link:link,
-.btn-link:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.btn-link:hover {
-    transform: translateY(-0.2rem);
-    font-size: 1.01rem;
-}
-
-.btn-link:active {
-    transform: translateY(-0.1rem);
-    font-size: 1.01rem;
-}
-
-
-.btn--rounded:link,
-.btn--rounded:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 10rem;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
-} 
-
-.btn--rounded:hover {
-    transform: translateY(-0.2rem);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
-}
-
-.btn--rounded:active {
-    transform: translateY(-0.1rem);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2);
-}
-
-.btn--semi-rounded:link,
-.btn--semi-rounded:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 1rem;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
-}
-
-.btn--semi-rounded:hover {
-    transform: translateY(-0.2rem);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
-}
-
-.btn--semi-rounded:active {
-    transform: translateY(-0.1rem);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2);
+    &:active {
+        transform: translateY(-0.1rem);
+        font-size: 1.01rem;
+    }
 }
 
 .bottomToTopAnimation {
@@ -187,108 +266,6 @@ body {
     animation-duration: 2s;
     animation-timing-function: ease-out;
 }
-
-.btn-link--white {
-    color:  $color-white;
-}
-
-.btn-link--primary {
-    color:  $color-primary;
-}
-
-.btn-link--secondary {
-    color:  $color-secondary;
-}
-
-.btn-link--danger {
-    color:  $color-danger;
-}
-
-.btn-link--warning {
-    color:   $color-warning;
-}
-
-.btn-link--success {
-    color:  $color-success;
-}
-
-.btn--white {
-    background-color: $color-white;
-    color: $color-gray-dark;
-}
-
-.btn--primary {
-    background-color: $color-primary;
-    color: $color-white;
-}
-
-.btn--secondary {
-    background-color: $color-secondary;
-    color: $color-white;
-}
-
-.btn--danger {
-    background-color: $color-danger; /* Vermelho mais suave */
-    color: $color-white;
-}
-
-.btn--warning {
-    background-color:  $color-warning; /* Amarelo mais suave */
-    color: $color-white;
-}
-
-.btn--success {
-    background-color: $color-success; /* Verde mais suave */
-    color: $color-white;
-}
-
-.button-section__btn-wrapper{
-    padding: 1rem;
-}
-.button-section__btn-wrapper > * {
-    margin-right: 1.5rem; /* Define o espaçamento entre os elementos */
-}
-
-.button-section__text {
-    padding: 1rem;
-    display: flex;
-    text-transform: uppercase;
-    align-items: flex-start; /* Ou flex-end ou center, conforme necessário */
-}
-
-.btn--small {
-    font-weight: 400;
-    padding: 0.4rem 2.5rem;
-    font-size: 1.4rem;
-}
-
-.btn--medium {
-    font-weight: 400;
-    padding: 1rem 3.5rem;
-    font-size: 1.5rem;
-}
-
-.btn--large {
-    font-weight: 400;
-    padding: 1.2rem 4rem;
-    font-size: 1.6rem;
-}
-.btn-link--medium {
-    font-size: 1.5rem;
-}
-
-.btn-link--large {
-    font-size: 1.5rem;
-}
-
-
-.button-section {
-    height: 95vh;
-    display: flex; /* Torna o container um flex container */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    align-items: center; /* Centraliza os itens verticalmente */
-}
-
 
 @keyframes moveBottomToTop {
     0% {
