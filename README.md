@@ -15,3 +15,22 @@ Este projeto é uma exploração cuidadosa e detalhada do design utilizando CSS.
 [GUIA DE REGRAS CSS DO PROJETO](https://github.com/EddieUFSM/landi/blob/main/README.css-guide-project.md)
 
 [GUIA DE PADRÃO ARQUITETÔNICO DO PROJETO](https://github.com/EddieUFSM/landi/blob/main/README.arch-guide-project.md)
+
+## Executando em Modo de Desenvolvimento
+
+Para iniciar o projeto em modo de desenvolvimento, você pode usar o seguinte comando:
+
+```bash
+npm run start:dev
+```
+
+Este comando iniciará o servidor local e compilará automaticamente o Sass em CSS.
+Rodando o Servidor Local
+
+## Compilando o Sass
+
+Para compilar manualmente o Sass em CSS, você pode usar:
+
+```bash
+npm run compile:sass:watch
+```
