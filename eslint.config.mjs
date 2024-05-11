@@ -5,7 +5,7 @@ export default [
     rules: {
       "prefer-const": "error",
       semi: ['error', 'never'],
-      indent: ['error', 2]
+      indent: ["error", 2, { "SwitchCase": 1 }] 
     }
   },
   pluginHTML
