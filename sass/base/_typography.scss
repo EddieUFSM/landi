@@ -120,3 +120,83 @@ body {
     background-clip: text;
     color: transparent;
 }
+
+
+.quote {
+    font-size: 1.6rem;
+    font-weight: 200;
+    display: inline-block;
+    color: $color-gray;
+    border: 0.1rem solid $color-gray;
+    padding: 1rem;
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+
+    &--danger {
+        color: $color-danger;
+    }
+
+    &--warning {
+        color: $color-warning;
+    }
+
+    &--success {
+        color: $color-success;
+    }
+
+    &--primary {
+        color: $color-primary;
+    }
+
+    &--secondary {
+        color: $color-secondary;
+    }
+
+    &__author {
+        display: block;
+        margin-top: 2rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+
+        &::before {
+            display: "inline-block";
+            content: "- "
+        }
+    }
+}
+
+
+.note {
+    font-size: 1.6rem;
+    font-weight: 200;
+    display: inline-block;
+    color: $color-warning-dark;
+    border: 0.1rem solid $color-warning-dark;
+    padding: 1rem;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+
+    &--danger {
+        color: $color-danger;
+    }
+
+    &--warning {
+        color: $color-warning;
+    }
+
+    &--success {
+        color: $color-success;
+    }
+
+    &--primary {
+        color: $color-primary;
+    }
+
+    &--secondary {
+        color: $color-secondary;
+    }
+    
+}

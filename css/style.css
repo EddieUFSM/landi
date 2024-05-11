@@ -118,6 +118,54 @@ body {
   background-clip: text;
   color: transparent; }
 
+.quote {
+  font-size: 1.6rem;
+  font-weight: 200;
+  display: inline-block;
+  color: #a2a3a8;
+  border: 0.1rem solid #a2a3a8;
+  padding: 1rem; }
+  .quote:not(:last-child) {
+    margin-bottom: 3rem; }
+  .quote--danger {
+    color: #f44336; }
+  .quote--warning {
+    color: #ff9800; }
+  .quote--success {
+    color: #4caf50; }
+  .quote--primary {
+    color: #445669; }
+  .quote--secondary {
+    color: #2980b9; }
+  .quote__author {
+    display: block;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    font-weight: 400; }
+    .quote__author::before {
+      display: "inline-block";
+      content: "- "; }
+
+.note {
+  font-size: 1.6rem;
+  font-weight: 200;
+  display: inline-block;
+  color: #c66900;
+  border: 0.1rem solid #c66900;
+  padding: 1rem; }
+  .note:not(:last-child) {
+    margin-bottom: 3rem; }
+  .note--danger {
+    color: #f44336; }
+  .note--warning {
+    color: #ff9800; }
+  .note--success {
+    color: #4caf50; }
+  .note--primary {
+    color: #445669; }
+  .note--secondary {
+    color: #2980b9; }
+
 .u-text-align-center {
   text-align: center; }
 
