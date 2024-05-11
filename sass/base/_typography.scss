@@ -80,6 +80,10 @@ body {
     display: inline-block;
     color: $color-gray;
 
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+
     &--danger {
         color: $color-danger;
     }

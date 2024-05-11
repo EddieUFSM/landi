@@ -95,6 +95,8 @@ body {
   font-weight: 200;
   display: inline-block;
   color: #a2a3a8; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
   .paragraph--danger {
     color: #f44336; }
   .paragraph--warning {
@@ -383,6 +385,30 @@ body {
     width: calc((8.33333% * 11)); }
   .row .col-12 {
     width: 100%; }
+  .row .offset-1 {
+    margin-right: calc(8.33333% * 1); }
+  .row .offset-2 {
+    margin-right: calc(8.33333% * 2); }
+  .row .offset-3 {
+    margin-right: calc(8.33333% * 3); }
+  .row .offset-4 {
+    margin-right: calc(8.33333% * 4); }
+  .row .offset-5 {
+    margin-right: calc(8.33333% * 5); }
+  .row .offset-6 {
+    margin-right: calc(8.33333% * 6); }
+  .row .offset-7 {
+    margin-right: calc(8.33333% * 7); }
+  .row .offset-8 {
+    margin-right: calc((8.33333% * 8)); }
+  .row .offset-9 {
+    margin-right: calc((8.33333% * 9)); }
+  .row .offset-10 {
+    margin-right: calc((8.33333% * 10)); }
+  .row .offset-11 {
+    margin-right: calc((8.33333% * 11)); }
+  .row .offset-12 {
+    margin-right: 100%; }
 
 .section-basic-elements {
   padding: 25rem 0;
