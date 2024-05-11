@@ -8,12 +8,16 @@
     "start:server": "live-server",
     "compile:sass": "node-sass sass/main.scss css/style.css",
     "compile:sass:watch": "node-sass sass/main.scss css/style.css -w",
-    "generate:sprites-svg": "node utils/svg-sprite-generator.js"
+    "generate:sprites-svg": "node utils/svg-sprite-generator.js",
+    "lint:html": "npx eslint *.html .",
+    "lint:html:fix": "npx eslint *.html . --fix"
   },
   "author": "Eduardo",
   "license": "ISC",
   "devDependencies": {
     "cheerio": "^1.0.0-rc.12",
+    "eslint": "^9.2.0",
+    "eslint-plugin-html": "^8.1.1",
     "fs": "^0.0.1-security",
     "live-server": "^1.2.2",
     "node-sass": "^9.0.0",
