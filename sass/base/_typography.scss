@@ -1,17 +1,16 @@
 body {
-    font-family: "Lato", sans-serif;
+    font-family: "Ubuntu Sans", sans-serif;
     font-weight: 400;
-    /* font-size: 1.6rem; */
-    line-height: 1.7;
-    color: $color-gray-dark;
 }
 
-.heading-primary {
-    color: $color-white;
+.h1 {
     text-transform: uppercase;
-    margin-bottom: 4rem;
+    color: $color-gray;
+    font-size: 4rem;
+    font-weight: 600;
 
     &--main {
+        color: $color-white;
         display: block;
         font-size: 6rem;
         font-weight: 400;
@@ -22,6 +21,7 @@ body {
     }
 
     &--sub {
+        color: $color-white;
         display: block;
         font-size: 1.5rem;
         font-weight: 500;
@@ -29,5 +29,90 @@ body {
         animation-name: movebuttonToTop;
         animation-duration: 2s;
         animation-timing-function: ease-out;
+        margin-bottom: 4rem;
     }
+}
+
+.h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-block;
+    color: $color-gray
+}
+
+.h3 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+    color: $color-gray
+}
+
+
+.h4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: inline-block;
+    color: $color-gray
+}
+
+.h5 {
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    display: inline-block;
+    color: $color-gray
+}
+
+.h6 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-block;
+    color: $color-gray
+}
+
+.paragraph {
+    font-size: 1.6rem;
+    font-weight: 200;
+    display: inline-block;
+    color: $color-gray;
+
+    &--danger {
+        color: $color-danger;
+    }
+
+    &--warning {
+        color: $color-warning;
+    }
+
+    &--success {
+        color: $color-success;
+    }
+
+    &--primary {
+        color: $color-primary;
+    }
+
+    &--secondary {
+        color: $color-secondary;
+    }
+}
+
+.text-background-clip {
+    text-align: center;
+    font-weight: 800;
+    display: inline-block;
+    background-image: linear-gradient(
+        to right bottom,  
+        rgba($color-primary-light, 0.8),
+        rgba($color-secondary-dark, 0.8)), 
+        url(../img/hero-1.jpg);
+    
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }

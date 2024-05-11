@@ -24,13 +24,18 @@
 
 ### Layouts Types
 
-![Tipos de Layout](img/layout_types.jpg)
-**Float Layouts___________________ | Flexbox_____________________ | CSS GRID_____________**
 #### Float Layouts
+Esse projeto utiliza float layouts
+
+![Tipos de Layout](img/float_layouts.jpg)
 
 #### Flexbox
+Projeto com flexbox será desenvolvido e seu link em breve estará diponível aqui! 
+![Tipos de Layout](img/flexbox.jpg)
 
 #### CSS GRID
+Projeto com CSS Grid será desenvolvido e seu link em breve estará diponível aqui! 
+![Tipos de Layout](img/css_grid.jpg)
 
 ## Código escalável e com alta manuteinibilidade
 

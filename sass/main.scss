@@ -1,33 +1,15 @@
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
 @import "base/base";
 @import "base/animations";
 @import "base/typography";
+@import "base/utilities";
 
 @import "components/button";
 @import "components/link";
 
 @import "layout/header";
+@import "layout/grid";
 
-.button-section {
-    height: 95vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-
-    &__btn-wrapper{
-        padding: 1rem;
-    }
-
-    &__btn-wrapper > * {
-        margin-right: 1.5rem;
-    }
-
-    &__text {
-        padding: 1rem;
-        display: flex;
-        text-transform: uppercase;
-        align-items: flex-start; /* Ou flex-end ou center, conforme necessário */
-    }
-
-}
+@import "pages/home";

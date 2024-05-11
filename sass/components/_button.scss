@@ -1,13 +1,17 @@
 
 .btn {
+    background-color: $color-gray;
+    color: $color-white;
+
     &:link,
     &:visited {
         text-transform: uppercase;
         text-decoration: none;
         display: inline-block;
         border-radius: 0.4rem;
-        box-shadow: 0 1rem 2rem rgba($color-black-blue, .2);
+        box-shadow: 0 0.2rem 0.5rem rgba($color-black-blue, 0.1);
     }
+
     &--rounded:link,
     &--rounded:visited {
         border-radius: 10rem;
@@ -18,16 +22,14 @@
     }
 
     &:hover {
-        transform: translateY(-0.2rem);
-        box-shadow: 0 1rem 2rem rgba($color-black-blue, .2);
+        transform: translateY(-0.15rem);
+        box-shadow: 0 1rem 2rem rgba($color-black-blue, .1);
     }
 
     &:active {
-        transform: translateY(-0.1rem);
-        box-shadow: 0 0.5rem 1rem rgba($color-black-blue, .2);
+        transform: translateY(-0.15rem);
+        box-shadow: 0 0.5rem 1rem rgba($color-black-blue, .1);
     }
-
-
 
     &--small {
         font-weight: 400;
@@ -46,7 +48,6 @@
         padding: 1.2rem 4rem;
         font-size: 1.6rem;
     }
-
 
     &--white {
         background-color: $color-white;
@@ -77,4 +78,130 @@
         background-color: $color-success; 
         color: $color-white;
     }
+
+    &--outline--white {
+        border: 1px solid $color-white;
+        background-color: transparent;
+        color: $color-white;
+        &:hover {
+            background-color: $color-white-dark;
+            color: $color-primary;
+            border: none
+        }
+    
+        &:active {
+            background-color: $color-white-dark;
+            color: $color-primary;
+            border: none
+        }
+    }
+      
+    &--outline--primary {
+        border: 1px solid $color-primary;
+        background-color: transparent;
+        color: $color-primary;
+
+        &:hover {
+            background-color: $color-primary;
+            color: $color-white;
+            border: none
+        }
+    
+        &:active {
+            background-color: $color-primary;
+            color: $color-white;
+            border: none
+        }
+    }
+    
+    &--outline--secondary {
+        border: 1px solid $color-secondary;
+        background-color: transparent;
+        color: $color-secondary;
+
+        &:hover {
+            background-color: $color-secondary;
+            color: $color-white;
+            border: none
+        }
+    
+        &:active {
+            background-color: $color-secondary;
+            color: $color-white;
+            border: none
+        }
+    }
+    
+    &--outline--danger {
+        border: 1px solid $color-danger;
+        background-color: transparent;
+        color: $color-danger;
+
+        &:hover {
+            background-color: $color-danger;
+            color: $color-white;
+            border: none
+        }
+    
+        &:active {
+            background-color: $color-danger;
+            color: $color-white;
+            border: none
+        }
+    }
+    
+    &--outline--warning {
+        border: 1px solid $color-warning;
+        background-color: transparent;
+        color: $color-warning;
+
+        &:hover {
+            background-color: $color-warning;
+            color: $color-white;
+            border: none
+        }
+    
+        &:active {
+            background-color: $color-warning;
+            color: $color-white;
+            border: none
+        }
+    }
+    
+    &--outline--success {
+        border: 1px solid $color-success;
+        background-color: transparent;
+        color: $color-success;
+
+        &:hover {
+            background-color: $color-success;
+            color: $color-white;
+            border: none
+        }
+    
+        &:active {
+            background-color: $color-success;
+            color: $color-white;
+            border: none
+        }
+    }
+
+    &--outline {
+        border: 1px solid $color-success;
+        background-color: transparent;
+        color: $color-gray;
+
+        &:hover {
+            background-color: $color-gray;
+            color: $color-white;
+            border: none
+        }
+    
+        &:active {
+            background-color: $color-gray;
+            color: $color-white;
+            border: none
+        }
+    }
+      
 }
