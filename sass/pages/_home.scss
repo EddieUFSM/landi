@@ -4,14 +4,32 @@
     margin-top: -10vh;
 
     &__links {
+        margin-top: 0rem;
         margin-bottom: 5rem;
     }
 
     &__buttons {
+        margin-top: 0rem;
         margin-bottom: 4rem;
     }
 
-    &__typographies{
+    &__typographies {
+        margin-top: 0rem;
         margin-bottom: 4rem;
     }
+
+    &__images {
+        margin-top: 0rem;
+        margin-bottom: 4rem;
+    }
+
+    &__icons {
+        margin-top: 0rem;
+        margin-bottom: 4rem;
+    }
+}
+
+.section-basic-elements__images .img {
+    width: 18rem; 
+    height: 18rem; 
 }

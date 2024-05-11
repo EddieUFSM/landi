@@ -16,7 +16,11 @@
         margin-right: 1rem;
     }
 }
-
+.u-space-between-child-elements-2 {
+    *:not(:last-child) {
+        margin-right: 2rem;
+    }
+}
 .fill-primary {
     fill: $color-primary;
   }
