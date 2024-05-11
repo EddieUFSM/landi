@@ -413,3 +413,9 @@ body {
 .section-basic-elements {
   padding: 25rem 0;
   margin-top: -10vh; }
+  .section-basic-elements__links {
+    margin-bottom: 5rem; }
+  .section-basic-elements__buttons {
+    margin-bottom: 4rem; }
+  .section-basic-elements__typographies {
+    margin-bottom: 4rem; }
