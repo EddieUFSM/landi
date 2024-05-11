@@ -343,6 +343,80 @@ body {
     .img--square--raised {
       box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3); }
 
+.icon-button {
+  background-color: #a2a3a8;
+  display: inline-flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%; }
+  .icon-button:link, .icon-button:visited {
+    border-radius: 50%;
+    box-shadow: 0 0.2rem 0.5rem rgba(5, 7, 13, 0.1); }
+  .icon-button:hover {
+    transform: translateY(-0.15rem);
+    box-shadow: 0 1rem 2rem rgba(5, 7, 13, 0.1);
+    cursor: pointer; }
+  .icon-button:active {
+    transform: translateY(-0.15rem);
+    box-shadow: 0 0.5rem 1rem rgba(5, 7, 13, 0.1); }
+  .icon-button__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: #ffffff; }
+  .icon-button--small {
+    width: 2rem;
+    height: 2rem;
+    background-color: #a2a3a8;
+    display: inline-flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; }
+    .icon-button--small > .icon-button__icon {
+      width: 1.34rem;
+      height: 1.34rem; }
+  .icon-button--medium {
+    width: 3rem;
+    height: 3rem;
+    background-color: #a2a3a8;
+    display: inline-flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; }
+    .icon-button--medium > .icon-button__icon {
+      width: 2rem;
+      height: 2rem; }
+  .icon-button--large {
+    width: 4rem;
+    height: 4rem;
+    background-color: #a2a3a8;
+    display: inline-flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; }
+    .icon-button--large > .icon-button__icon {
+      width: 2.6rem;
+      height: 2.6rem; }
+  .icon-button--white {
+    background-color: #ffffff; }
+    .icon-button--white > .icon-button__icon {
+      fill: #a2a3a8; }
+  .icon-button--primary {
+    background-color: #445669; }
+  .icon-button--secondary {
+    background-color: #2980b9; }
+  .icon-button--danger {
+    background-color: #f44336; }
+  .icon-button--warning {
+    background-color: #ff9800; }
+  .icon-button--success {
+    background-color: #4caf50; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(44, 62, 80, 0.8), rgba(30, 107, 155, 0.8)), url(../img/land-1.jpg);
